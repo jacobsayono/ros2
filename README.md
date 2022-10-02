@@ -1,6 +1,5 @@
-# ROS2
-## Beginner: Command-Line Interface Tools
-### Configuring Environment
+# Beginner: Command-Line Interface Tools
+## Configuring Environment
 
 #### installation:
  
@@ -168,7 +167,7 @@ this terminal becomes a separate, but identical, controller for turtle2
 
 `ctrl+c` in `rqt`
 
-### Nodes
+## Nodes
 
 #### visualizing a robotic system made up of nodes (ROS2 graph):
 
@@ -247,5 +246,5 @@ these tools are vital to understanding the flow of data in a complex, real-world
 
 next, we will learn about topics – one of the communication types that connects nodes
 
-### Topics
+## Topics
 
