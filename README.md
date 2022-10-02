@@ -1,4 +1,4 @@
-# Beginner: Command-Line Interface Tools
+# Command-Line Interface Tools
 ## Configuring Environment
 
 #### installation:
