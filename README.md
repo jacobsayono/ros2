@@ -172,6 +172,8 @@ this terminal becomes a separate, but identical, controller for turtle2
 
 #### visualizing a robotic system made up of nodes (ROS2 graph):
 
+<img src="https://docs.ros.org/en/foxy/_images/Nodes-TopicandService.gif"/>
+
 `ROS2 graph` is a network of ROS2 elements processing data together at one time
 
 this encompasses all executables and connections between them
