@@ -248,3 +248,4 @@ next, we will learn about topics – one of the communication types that connect
 
 ## Topics
 
+img
