@@ -248,4 +248,4 @@ next, we will learn about topics – one of the communication types that connect
 
 ## Topics
 
-img
+<img src="https://docs.ros.org/en/foxy/_images/Topic-MultiplePublisherandMultipleSubscriber.gif"/>
