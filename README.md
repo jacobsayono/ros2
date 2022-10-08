@@ -251,35 +251,54 @@ next, we will learn about topics – one of the communication types that connect
 <img src="https://docs.ros.org/en/foxy/_images/Topic-MultiplePublisherandMultipleSubscriber.gif"/>
 
 visualizing a robotic system made up of nodes (ROS2 graph):
+
 topics acts as a bus for nodes to exchange messages. they don’t have to only be one-to-one communication but can also be one-to-many or many-to-many
 
-startup turtlesim:
+### startup turtlesim:
+
 $ ros2 run turtlesim turtlesim_node
+
 $ ros2 run turtlesim turtle_teleop_key
+
 node names are:
+
 /turtlesim
+
 /teleop_turtle
 
-rqt_graph:
+### rqt_graph:
+
 $ rqt_graph
+
 visualize all changing nodes and topics as well as the connections between them
+
 i set group to 0 and view to nodes/topics (active)
 
 nodes are in circles
+
 topics are in squares
+
 actions are in the periphery with the name `_action` in its path
+
 `/teleop_turtle` is publishing data (the keystrokes you enter to move the turtle around) to the `/turtle1/cmd_vel` topic, and the `/turtlesim` node is subscribed to that topic to receive the data
+
 hovering with a mouse cursor highlights how each element is interacting with the system
 
-ros2 topic list:
+### ros2 topic list:
+
 $ ros2 topic list
+
 returns a list of all the topics currently active in the system
+
 $ ros2 topic list -t
+
 returns the same list of all the topics but with the topic `type` appended in brackets
+
 these `type` or attributes are how nodes know they are talking about the same information as it moves over topics
+
 you can uncheck all the boxes under hide to see where all these topics are in rqt_graph but leave those options checked for now to avoid confusion
 
-ros2 topic echo:
+### ros2 topic echo:
 $ ros2 topic echo <topic_name>
 use `echo` to introspect `/turtle1/cmd_vel` which takes `/teleop_turtle` published data to `/turtlesim`
 $ ros2 topic echo /turtle1/cmd_vel
@@ -290,11 +309,11 @@ uncheck `debug`
 `/_ros2cli_…` is the node created by the `echo`
 now we can see the publisher is publishing data over the `cmd_vel` topic, and the two subscribers are subscribed
 
-ros2 topic info:
+### ros2 topic info:
 counting the number of publisher and subscription of a topic
 $ ros2 topic info /turtle1/cmd_vel
 
-ros2 interface show:
+### ros2 interface show:
 publishers and subscribers must send and receive the `same type` of message to communicate
 `ros2 topic list -t` where the `cmd_vel` topic has the type `geometry_msgs/msg/Twist`
 this means that the package `geometry_msgs` has a `msg` called `Twist`
@@ -302,7 +321,7 @@ $ ros2 interface show geometry_msgs/msg/Twist
 `/turtlesim` node is expecting (subscribed to) a message with two vectors `linear` and `angular` of three elements each `x` `y` `z`
 this is what `Vector3` refers to
 
-ros2 topic pub:
+### ros2 topic pub:
 $ ros2 topic pub <topic_name> <msg_type> ‘<args>’
 can publish data onto a topic directly from the command line
 the `’<args>’` argument is the actual data you’ll pass to the topic in the 2 vectors of 3 elements structure
@@ -321,7 +340,7 @@ refresh rqt_graph
 now `/turtlesim` node is also publishing to the `pose` topic, which the new `echo` node is subscribed to
 
 
-ros2 topic hz:
+### ros2 topic hz:
 view the rate at which data is published
 $ ros2 topic hz /turtle1/pose
 returns data on the rate at which the /turtlesim node is publishing data to the `pose` topic
@@ -330,9 +349,9 @@ if we run the above command with
 $ ros2 topic hz /turtle1/cmd_vel
 we will see an average reflecting that rate and also see a new cli node in rqt_graph
 
-clean up:
+### clean up:
 ctrl+c in each terminal to terminate all the many nodes currently running
 
-summary:
+### summary:
 nodes publish information over topics, which allows any number of other nodes to subscribe to and access that information. we saw the connections between several nodes over topics using rqt_graph and command line tools to have a good idea of how data moves around ROS2
 
