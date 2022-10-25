@@ -355,3 +355,4 @@ ctrl+c in each terminal to terminate all the many nodes currently running
 ### summary:
 nodes publish information over topics, which allows any number of other nodes to subscribe to and access that information. we saw the connections between several nodes over topics using rqt_graph and command line tools to have a good idea of how data moves around ROS2
 
+img
