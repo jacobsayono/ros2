@@ -360,4 +360,4 @@ nodes publish information over topics, which allows any number of other nodes to
  
 img
 
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jacobsayono&layout=compact&theme=gruvbox&langs_count=10&hide=jupyter%20notebook)](https://github.com/jacobsayono/github-readme-stats)
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jacobsayono&layout=compact&theme=aura&langs_count=4&hide=jupyter%20notebook)](https://github.com/jacobsayono/github-readme-stats)
