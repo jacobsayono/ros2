@@ -359,5 +359,3 @@ nodes publish information over topics, which allows any number of other nodes to
  https://fast-dds.docs.eprosima.com/en/v2.1.0/index.html
  
 img
-
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=jacobsayono&layout=compact&theme=aura&langs_count=4&hide=jupyter%20notebook)](https://github.com/jacobsayono/github-readme-stats)
