@@ -1,14 +1,16 @@
 # ros1_bridge
 
-## bridging ROS1 (Noetic) and ROS2 (Foxy)
+## Bridging ROS1 (Noetic) and ROS2 (Foxy)
 
-### main document:
+### Main document:
 https://github.com/ros2/ros1_bridge/blob/foxy/README.md
 
-### how ros2-ros1 bridge works:
+### How ros2-ros1 bridge works:
 https://github.com/ros2/ros1_bridge/blob/foxy/doc/index.rst
 
-### clone repo from FOXY TREE:
+okay, now we're ready to start!
+
+### Clone repo from FOXY TREE:
 https://github.com/ros2/ros1_bridge/tree/foxy
 
 MAKE SURE YOU CLONE THE FOXY TREE!!! (I spent days trying to figure out the problem but you're welcome hahaha)
@@ -25,9 +27,9 @@ MAKE SURE YOU CLONE THE FOXY TREE!!! (I spent days trying to figure out the prob
 
 `$ colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure`
 
-### now we are ready to reserve 1 terminal for our ros1_bridge
+### Now we are ready to reserve 1 terminal for our ros1_bridge
 
-the documentation does not say this, but ros1_bridge works like a `ros2 workspace folder`. this means that you have to source this folder!
+The documentation does not say this, but ros1_bridge works like a `ros2 workspace folder`. this means that you have to source this folder!
 
 In `.bashrc`, which you can edit by typing `gedit ~/.bashrc` I alias 3 things:
 
@@ -47,7 +49,7 @@ That way, when you want to run ros1_bridge, which is a ros2 workspace, you can u
 
 `$ ros2 run ros1_bridge dynamic_bridge`
 
-in this order!
+in this order!!!
 
 ### I hope this helps new beginners (like me) trying to get into ROS2 and ROS1!
 
