@@ -13,7 +13,7 @@ okay, now we're ready to start!
 ### Clone repo from FOXY TREE:
 https://github.com/ros2/ros1_bridge/tree/foxy
 
-MAKE SURE YOU CLONE THE FOXY TREE!!! (I spent days trying to figure out the problem but you're welcome hahaha)
+MAKE SURE YOU CLONE THE FOXY TREE!!! (I spent days trying to figure out the problem but you're welcome! <3)
 
 `$ git clone -b foxy https://github.com/ros2/ros1_bridge.git`
 
