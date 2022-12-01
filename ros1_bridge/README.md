@@ -49,7 +49,7 @@ That way, when you want to run ros1_bridge, which is a ros2 workspace, you can u
 
 `$ ros2 run ros1_bridge dynamic_bridge`
 
-in this order!!!
+IN THIS ORDER!!! (very very important)
 
 ### I hope this helps new beginners (like me) trying to get into ROS2 and ROS1!
 
