@@ -358,4 +358,10 @@ nodes publish information over topics, which allows any number of other nodes to
  DDS:
  https://fast-dds.docs.eprosima.com/en/v2.1.0/index.html
  
-img
+# Quality of Service (QoS)
+
+TODO
+
+# Fast DDS
+
+TODO
