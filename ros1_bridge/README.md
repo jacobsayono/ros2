@@ -1,11 +1,17 @@
+# ros1_bridge
+
+## bridging ROS1 (Noetic) and ROS2 (Foxy)
+
 ### main document:
-`https://github.com/ros2/ros1_bridge/blob/foxy/README.md`
+https://github.com/ros2/ros1_bridge/blob/foxy/README.md
 
 ### how ros2-ros1 bridge works:
-`https://github.com/ros2/ros1_bridge/blob/foxy/doc/index.rst`
+https://github.com/ros2/ros1_bridge/blob/foxy/doc/index.rst
 
 ### clone repo from FOXY TREE:
-`https://github.com/ros2/ros1_bridge/tree/foxy`
+https://github.com/ros2/ros1_bridge/tree/foxy
+
+MAKE SURE YOU CLONE THE FOXY TREE!!! (I spent days trying to figure out the problem but you're welcome hahaha)
 
 `$ git clone -b foxy https://github.com/ros2/ros1_bridge.git`
 
@@ -23,7 +29,7 @@
 
 the documentation does not say this, but ros1_bridge works like a `ros2 workspace folder`. this means that you have to source this folder!
 
-In .bashrc, I alias 3 things:
+In `.bashrc`, which you can edit by typing `gedit ~/.bashrc` I alias 3 things:
 
 `alias noetic='source /opt/ros/noetic/setup.bash'`
 
