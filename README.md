@@ -355,13 +355,18 @@ ctrl+c in each terminal to terminate all the many nodes currently running
 ### summary:
 nodes publish information over topics, which allows any number of other nodes to subscribe to and access that information. we saw the connections between several nodes over topics using rqt_graph and command line tools to have a good idea of how data moves around ROS2
 
- DDS:
- https://fast-dds.docs.eprosima.com/en/v2.1.0/index.html
- 
-# Quality of Service (QoS)
+# Using Fast Data-Distribution-Service (DDS) Discovery Server as discovery protocol
 
 TODO
 
-# Fast DDS
+https://docs.ros.org/en/foxy/Tutorials/Advanced/Discovery-Server/Discovery-Server.html
+
+https://fast-dds.docs.eprosima.com/en/v2.1.0/index.html
+
+https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html
+
+# Using Quality of Service (QoS) for lossy networks
 
 TODO
+
+https://docs.ros.org/en/foxy/Tutorials/Demos/Quality-of-Service.html
