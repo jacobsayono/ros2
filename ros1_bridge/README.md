@@ -86,8 +86,8 @@ Honestly, I haven't yet known when I would use any of these options. I am also c
 `--prefix`                        
 `ros1_bridge_generate_factories`  
 `simple_bridge`                   
-`simple_bridge_1_to_2`
-`simple_bridge_2_to_1`
-`static_bridge`
-`test_ros2_client_cpp`
+`simple_bridge_1_to_2`                        
+`simple_bridge_2_to_1`                        
+`static_bridge`                        
+`test_ros2_client_cpp`                        
 `test_ros2_server_cpp`
