@@ -370,3 +370,7 @@ https://docs.ros.org/en/foxy/How-To-Guides/DDS-tuning.html
 TODO
 
 https://docs.ros.org/en/foxy/Tutorials/Demos/Quality-of-Service.html
+ 
+Helpful book/repo I am currently reading:
+ 
+https://github.com/PacktPublishing/ROS-Robotics-Projects-SecondEdition
